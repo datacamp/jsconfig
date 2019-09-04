@@ -19,7 +19,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.{spec,test}.{js,ts}','**/__mocks__/**'],
+      files: ['**/*.{spec,test}.{js,ts}', '**/__mocks__/**'],
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'off',
       },

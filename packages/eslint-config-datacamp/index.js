@@ -15,17 +15,24 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'no-console': 'error',
-    "comma-dangle": ["error", "always-multiline"],
-    "prefer-const": "error",
-    "prefer-template": "error",
-    "object-shorthand": ["error", "always"],
-    "no-useless-catch": "error",
+    'comma-dangle': ['error', 'always-multiline'],
+    'prefer-const': 'error',
+    'prefer-template': 'error',
+    'object-shorthand': ['error', 'always'],
+    'no-useless-catch': 'error',
   },
   overrides: [
     {
-      files: ['**/*.{spec,test}.{js,ts}','**/__mocks__/**'],
+      files: ['**/*.{spec,test}.{js,ts}', '**/__mocks__/**'],
       env: {
         jest: true,
+      },
+    },
+    {
+      files: ['prettier.config.js'],
+      rules: {
+        'global-require': 'off',
+        'import/no-extraneous-dependencies': 'off',
       },
     },
   ],
