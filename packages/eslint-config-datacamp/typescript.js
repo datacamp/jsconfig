@@ -2,7 +2,7 @@ module.exports = {
   parser: 'babel-eslint',
   plugins: ['json'],
   extends: [
-    './base-config',
+    './index',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
