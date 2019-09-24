@@ -90,3 +90,4 @@ yarn lerna publish
 ## Example Projects using JSConfig
 
 - [teach-data-api](https://github.com/datacamp-engineering/teach-data-api)
+- [kubernetes-multiplexer](https://github.com/datacamp-engineering/kubernetes-multiplexer)
