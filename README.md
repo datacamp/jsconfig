@@ -89,4 +89,4 @@ yarn lerna publish
 
 ## Example Projects using JSConfig
 
-- [teach-data-api](https://github.datacamp.com/datacamp-engineering/teach-data-api)
+- [teach-data-api](https://github.com/datacamp-engineering/teach-data-api)
