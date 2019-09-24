@@ -1,5 +1,8 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
+  settings: {
+    'import/resolver': { typescript: {} },
+  },
   plugins: ['json'],
   extends: [
     './index',
@@ -16,6 +19,14 @@ module.exports = {
         allowHigherOrderFunctions: true,
       },
     ],
+    'react/prop-types': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      { varsIgnorePattern: 'jsx' },
+    ],
+    'typescript-sort-keys/interface': ['error', 'asc', { natural: true }],
+    'typescript-sort-keys/string-enum': ['error', 'asc', { natural: true }],
   },
   overrides: [
     {
