@@ -46,7 +46,7 @@ It's recommended to:
 ### Prettier :nail_care:
 
 ```bash
-yarn add prettier @datacamp/prettier-config
+yarn add -D prettier @datacamp/prettier-config
 ```
 
 Create a file `prettier.config.js` with the following contents
