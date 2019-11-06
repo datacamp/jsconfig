@@ -1,8 +1,6 @@
 const { testFilesGlobPatterns } = require('./helpers');
 
 module.exports = {
-  parser: 'babel-eslint',
-  plugins: ['json', 'sort-keys-fix', 'react', 'react-hooks'],
   extends: [
     'eslint:recommended',
     'airbnb-base',
@@ -11,18 +9,29 @@ module.exports = {
     'prettier',
     'prettier/react',
   ],
+  overrides: [
+    {
+      env: {
+        jest: true,
+      },
+      files: testFilesGlobPatterns,
+    },
+    {
+      files: ['prettier.config.js'],
+      rules: {
+        'global-require': 'off',
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
+  ],
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2019,
     sourceType: 'module',
   },
+  plugins: ['json', 'sort-keys-fix', 'react', 'react-hooks'],
   rules: {
-    'prettier/prettier': 'error',
-    'no-console': 'error',
     'comma-dangle': ['error', 'always-multiline'],
-    'prefer-const': 'error',
-    'prefer-template': 'error',
-    'object-shorthand': ['error', 'always'],
-    'no-useless-catch': 'error',
     'import/no-extraneous-dependencies': [
       'error',
       {
@@ -35,25 +44,16 @@ module.exports = {
         ],
       },
     ],
-    'sort-order': 'off',
-    'sort-keys-fix/sort-keys-fix': ['error', 'asc', { natural: true }],
+    'no-console': 'error',
+    'no-useless-catch': 'error',
+    'object-shorthand': ['error', 'always'],
+    'prefer-const': 'error',
+    'prefer-template': 'error',
+    'prettier/prettier': 'error',
     'react/jsx-sort-props': 'error',
-    'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'sort-keys-fix/sort-keys-fix': ['error', 'asc', { natural: true }],
+    'sort-order': 'off',
   },
-  overrides: [
-    {
-      files: testFilesGlobPatterns,
-      env: {
-        jest: true,
-      },
-    },
-    {
-      files: ['prettier.config.js'],
-      rules: {
-        'global-require': 'off',
-        'import/no-extraneous-dependencies': 'off',
-      },
-    },
-  ],
 };
