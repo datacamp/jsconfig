@@ -1,9 +1,7 @@
+const { testFilesGlobPatterns } = require('./helpers');
+
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  settings: {
-    'import/resolver': { typescript: {} },
-  },
-  plugins: ['json'],
+  plugins: ['json', 'typescript-sort-keys'],
   extends: [
     './index',
     'plugin:import/typescript',
@@ -20,17 +18,12 @@ module.exports = {
       },
     ],
     'react/prop-types': 'off',
-    '@typescript-eslint/no-var-requires': 'off',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      { varsIgnorePattern: 'jsx' },
-    ],
     'typescript-sort-keys/interface': ['error', 'asc', { natural: true }],
     'typescript-sort-keys/string-enum': ['error', 'asc', { natural: true }],
   },
   overrides: [
     {
-      files: ['**/*.{spec,test}.{js,ts}', '**/__mocks__/**'],
+      files: testFilesGlobPatterns,
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'off',
       },
