@@ -5,7 +5,8 @@
     "lerna": "^3.16.4",
     "prettier": "^1.18.2"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "workspaces": ["packages/*"]
 }

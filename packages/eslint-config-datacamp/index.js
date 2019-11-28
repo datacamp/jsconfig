@@ -1,32 +1,20 @@
+const { testFilesGlobPatterns } = require('./helpers');
+
 module.exports = {
-  parser: 'babel-eslint',
-  plugins: ['json'],
   extends: [
     'eslint:recommended',
     'airbnb-base',
     'plugin:jest/recommended',
     'plugin:prettier/recommended',
     'prettier',
+    'prettier/react',
   ],
-  parserOptions: {
-    ecmaVersion: 2019,
-    sourceType: 'module',
-  },
-  rules: {
-    'prettier/prettier': 'error',
-    'no-console': 'error',
-    'comma-dangle': ['error', 'always-multiline'],
-    'prefer-const': 'error',
-    'prefer-template': 'error',
-    'object-shorthand': ['error', 'always'],
-    'no-useless-catch': 'error',
-  },
   overrides: [
     {
-      files: ['**/*.{spec,test}.{js,ts}', '**/__mocks__/**'],
       env: {
         jest: true,
       },
+      files: testFilesGlobPatterns,
     },
     {
       files: ['prettier.config.js'],
@@ -36,4 +24,36 @@ module.exports = {
       },
     },
   ],
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaVersion: 2019,
+    sourceType: 'module',
+  },
+  plugins: ['json', 'sort-keys-fix', 'react', 'react-hooks'],
+  rules: {
+    'comma-dangle': ['error', 'always-multiline'],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          ...testFilesGlobPatterns,
+          '.storybook/**.js',
+          '**/*.stories.js',
+          '**/webpack.config.js',
+          '**/gulpfile.js',
+        ],
+      },
+    ],
+    'no-console': 'error',
+    'no-useless-catch': 'error',
+    'object-shorthand': ['error', 'always'],
+    'prefer-const': 'error',
+    'prefer-template': 'error',
+    'prettier/prettier': 'error',
+    'react/jsx-sort-props': 'error',
+    'react-hooks/exhaustive-deps': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'sort-keys-fix/sort-keys-fix': ['error', 'asc', { natural: true }],
+    'sort-order': 'off',
+  },
 };

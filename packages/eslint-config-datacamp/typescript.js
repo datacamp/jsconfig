@@ -1,28 +1,32 @@
+const { testFilesGlobPatterns } = require('./helpers');
+
 module.exports = {
-  parser: 'babel-eslint',
-  plugins: ['json'],
   extends: [
     './index',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
   ],
-  rules: {
-    '@typescript-eslint/explicit-function-return-type': [
-      'error',
-      {
-        allowExpressions: true,
-        allowTypedFunctionExpressions: true,
-        allowHigherOrderFunctions: true,
-      },
-    ],
-  },
   overrides: [
     {
-      files: ['**/*.{spec,test}.{js,ts}', '**/__mocks__/**'],
+      files: testFilesGlobPatterns,
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'off',
       },
     },
   ],
+  plugins: ['json', 'typescript-sort-keys'],
+  rules: {
+    '@typescript-eslint/explicit-function-return-type': [
+      'error',
+      {
+        allowExpressions: true,
+        allowHigherOrderFunctions: true,
+        allowTypedFunctionExpressions: true,
+      },
+    ],
+    'react/prop-types': 'off',
+    'typescript-sort-keys/interface': ['error', 'asc', { natural: true }],
+    'typescript-sort-keys/string-enum': ['error', 'asc', { natural: true }],
+  },
 };
