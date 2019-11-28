@@ -29,7 +29,13 @@ module.exports = {
     ecmaVersion: 2019,
     sourceType: 'module',
   },
-  plugins: ['json', 'sort-keys-fix', 'react', 'react-hooks'],
+  plugins: [
+    'json',
+    'react',
+    'react-hooks',
+    'simple-import-sort',
+    'sort-keys-fix',
+  ],
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
     'import/no-extraneous-dependencies': [
@@ -53,6 +59,25 @@ module.exports = {
     'react/jsx-sort-props': 'error',
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
+    'simple-import-sort/sort': [
+      'error',
+      {
+        groups: [
+          // Side effect imports.
+          ['^\\u0000'],
+          // NodeJS modules
+          [`^(${require('module').builtinModules.join('|')})(/|$)`], // eslint-disable-line global-require
+          // Packages
+          ['^@?\\w'],
+          // Absolute imports
+          ['^(src|app)/'],
+          // Relative imports (outside local folder)
+          ['^\\.{2}/'],
+          // Relative imports (inside local folder)
+          ['^\\.{1}/'],
+        ],
+      },
+    ],
     'sort-keys-fix/sort-keys-fix': ['error', 'asc', { natural: true }],
     'sort-order': 'off',
   },
