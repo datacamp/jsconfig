@@ -1,6 +1,6 @@
 {
   "name": "@datacamp/eslint-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "files": ["*.js"],
   "dependencies": {
