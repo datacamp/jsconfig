@@ -21,5 +21,6 @@
   },
   "peerDependencies": {
     "eslint": "^6.0.1"
-  }
+  },
+  "homepage": "https://github.com/datacamp-engineering/jsconfig"
 }
