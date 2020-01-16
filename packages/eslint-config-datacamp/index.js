@@ -57,6 +57,8 @@ module.exports = {
     'prefer-template': 'error',
     'prettier/prettier': 'error',
     'react/jsx-sort-props': 'error',
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'simple-import-sort/sort': [
