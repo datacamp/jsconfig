@@ -32,6 +32,18 @@ module.exports = {
 };
 ```
 
+For front-end projects, you might want to adjust the environment:
+
+```js
+// .eslintrc.js
+module.exports = {
+  // [...]
+  env: {
+    browser: true
+  }
+};
+```
+
 Afterwards you can run eslint as follows:
 
 ```bash
