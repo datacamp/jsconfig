@@ -37,7 +37,7 @@ module.exports = {
     'sort-keys-fix',
   ],
   rules: {
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': 'off', // Defined by prettier
     'import/no-extraneous-dependencies': [
       'error',
       {
