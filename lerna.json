@@ -1,4 +1,9 @@
 {
+  "command": {
+    "publish": {
+      "allowBranch": "master"
+    }
+  },
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,

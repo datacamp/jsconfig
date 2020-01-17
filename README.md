@@ -39,8 +39,8 @@ For front-end projects, you might want to adjust the environment:
 module.exports = {
   // [...]
   env: {
-    browser: true
-  }
+    browser: true,
+  },
 };
 ```
 
@@ -93,11 +93,15 @@ If you need help, ping the #javascript channel on Slack.
 
 ### Publishing
 
-You can publish all the packages you've edited using `lerna publish`:
+You can publish all the packages you've edited. This will run `lerna publish` under the hood:
 
 ```bash
-yarn lerna publish
+yarn release
 ```
+
+This will propose version numbers for you and push a commit with a changelog to all the individual packages.
+
+_Please only run this from master and make sure to pull the latest master before you run it._ Running it will push a commit to master which the updated changelog etc.
 
 ## Example Projects using JSConfig
 
