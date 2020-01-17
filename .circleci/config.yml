@@ -1,0 +1,28 @@
+version: 2.1
+executors:
+  node:
+    docker:
+      - image: circleci/node:13.6.0
+jobs:
+  checks:
+    executor: node
+    steps:
+      - checkout
+      # - run:
+      #     name: Add .npmrc
+      #     command: printf "@datacamp:registry=https://registry.npmjs.org/\n//registry.npmjs.org/:_authToken=$NPM_TOKEN\n" > .npmrc
+      - run:
+          name: Install dependencies
+          command: yarn install
+      - run:
+          name: Check commitlint
+          command: yarn commitlint:ci
+workflows:
+  pr_flow:
+    jobs:
+      - checks:
+          # context: org-global
+          filters:
+            branches:
+              ignore:
+                - master
