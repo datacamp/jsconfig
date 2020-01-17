@@ -1,13 +1,22 @@
 {
   "private": true,
   "devDependencies": {
+    "@commitlint/config-conventional": "^8.3.4",
+    "commitlint": "^8.3.5",
     "eslint": "^6.3.0",
+    "husky": "^4.0.10",
     "lerna": "^3.16.4",
     "prettier": "^1.18.2"
   },
   "scripts": {
     "lint": "eslint .",
-    "release": "lerna publish --conventional-commits"
+    "release": "lerna publish --conventional-commits",
+    "commitlint:ci": "commitlint --config commitlint.config.js --from \"origin/master\""
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "workspaces": ["packages/*"]
 }
