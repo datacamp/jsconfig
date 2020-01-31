@@ -1,9 +1,10 @@
 {
   "name": "@datacamp/prettier-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "files": ["index.js"],
   "peerDependencies": {
     "prettier": "^1.18.2"
-  }
+  },
+  "homepage": "https://github.com/datacamp-engineering/jsconfig"
 }
