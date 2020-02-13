@@ -47,7 +47,7 @@ module.exports = {
 Afterwards you can run eslint as follows:
 
 ```bash
-yarn eslint . --ext ts,js --ignore-path .gitignore
+yarn eslint . --ext ts,js,json --ignore-path .gitignore
 ```
 
 It's recommended to:
