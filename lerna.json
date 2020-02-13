@@ -1,7 +1,8 @@
 {
   "command": {
     "publish": {
-      "allowBranch": "master"
+      "allowBranch": "master",
+      "message": "chore: publish packages"
     }
   },
   "version": "independent",
