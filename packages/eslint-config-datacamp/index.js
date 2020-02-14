@@ -81,7 +81,11 @@ module.exports = {
         ],
       },
     ],
-    'sort-keys-fix/sort-keys-fix': ['error', 'asc', { natural: true }],
+    'sort-keys-fix/sort-keys-fix': [
+      'error',
+      'asc',
+      { natural: true, caseSensitive: false },
+    ],
     'sort-order': 'off',
   },
 };
