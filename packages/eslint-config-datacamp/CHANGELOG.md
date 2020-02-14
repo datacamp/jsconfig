@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@1.0.0...@datacamp/eslint-config@1.0.1) (2020-02-14)
+
+
+### Bug Fixes
+
+* fix typo ([747c120](https://github.com/datacamp-engineering/jsconfig/commit/747c120))
+
+
+
+
+
 # [1.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@0.1.0...@datacamp/eslint-config@1.0.0) (2020-02-14)
 
 
