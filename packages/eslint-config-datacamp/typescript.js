@@ -26,7 +26,7 @@ module.exports = {
       },
     ],
     'react/prop-types': 'off',
-    'typescript-sort-keys/interface': ['error', 'asc', { natural: true }],
-    'typescript-sort-keys/string-enum': ['error', 'asc', { natural: true }],
+    'typescript-sort-keys/interface': ['error', 'asc', { natural: true, caseSensitive: false }],
+    'typescript-sort-keys/string-enum': ['error', 'asc', { natural: true, caseSensitive: false }],
   },
 };
