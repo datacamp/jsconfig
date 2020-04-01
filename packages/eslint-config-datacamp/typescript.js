@@ -25,6 +25,16 @@ module.exports = {
         allowTypedFunctionExpressions: true,
       },
     ],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
     'react/prop-types': 'off',
     'typescript-sort-keys/interface': [
       'error',
