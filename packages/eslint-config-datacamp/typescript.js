@@ -9,7 +9,7 @@ module.exports = {
   ],
   overrides: [
     {
-      files: testFilesGlobPatterns,
+      files: [...testFilesGlobPatterns, '*.js', '*.jsx'],
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'off',
       },
