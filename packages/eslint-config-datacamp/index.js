@@ -84,7 +84,7 @@ module.exports = {
     'sort-keys-fix/sort-keys-fix': [
       'error',
       'asc',
-      { natural: true, caseSensitive: false },
+      { caseSensitive: false, natural: true },
     ],
     'sort-order': 'off',
   },
