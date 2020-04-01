@@ -17,6 +17,9 @@ jobs:
       - run:
           name: Check commitlint
           command: yarn commitlint:ci
+      - run:
+          name: Lint
+          command: yarn lint
 workflows:
   pr_flow:
     jobs:
