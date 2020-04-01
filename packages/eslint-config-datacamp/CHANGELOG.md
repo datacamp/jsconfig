@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@1.0.1...@datacamp/eslint-config@1.1.0) (2020-04-01)
+
+
+### Features
+
+* allow typescript imports without extensions ([c6e3444](https://github.com/datacamp-engineering/jsconfig/commit/c6e3444))
+* don't require return types in js files ([bd6887a](https://github.com/datacamp-engineering/jsconfig/commit/bd6887a))
+
+
+
+
+
 ## [1.0.1](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@1.0.0...@datacamp/eslint-config@1.0.1) (2020-02-14)
 
 
