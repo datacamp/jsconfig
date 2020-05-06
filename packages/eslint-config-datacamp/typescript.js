@@ -1,5 +1,3 @@
-const { testFilesGlobPatterns } = require('./helpers');
-
 module.exports = {
   extends: [
     './index',
@@ -7,24 +5,9 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
   ],
-  overrides: [
-    {
-      files: [...testFilesGlobPatterns, '*.js', '*.jsx'],
-      rules: {
-        '@typescript-eslint/explicit-function-return-type': 'off',
-      },
-    },
-  ],
   plugins: ['json', 'typescript-sort-keys'],
   rules: {
-    '@typescript-eslint/explicit-function-return-type': [
-      'error',
-      {
-        allowExpressions: true,
-        allowHigherOrderFunctions: true,
-        allowTypedFunctionExpressions: true,
-      },
-    ],
+    '@typescript-eslint/explicit-function-return-type': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
