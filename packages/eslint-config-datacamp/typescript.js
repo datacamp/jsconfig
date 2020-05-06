@@ -14,6 +14,13 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
       },
     },
+    {
+      files: testFilesGlobPatterns,
+      rules: {
+        '@typescript-eslint/ban-ts-ignore': 'off',
+        '@typescript-eslint/ts-expect-error': 'off',
+      },
+    },
   ],
   plugins: ['json', 'typescript-sort-keys'],
   rules: {
