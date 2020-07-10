@@ -2,10 +2,7 @@
   "name": "@datacamp/eslint-config",
   "version": "2.0.0",
   "main": "index.js",
-  "files": [
-    "*.js",
-    "CHANGELOG.md"
-  ],
+  "files": ["*.js", "CHANGELOG.md"],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.0",
     "@typescript-eslint/parser": "^3.7.1",
@@ -20,6 +17,7 @@
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^5.0.0",
+    "eslint-plugin-sonarjs": "^0.5.0",
     "eslint-plugin-sort-keys-fix": "^1.0.1",
     "eslint-plugin-typescript-sort-keys": "^1.3.0"
   },
