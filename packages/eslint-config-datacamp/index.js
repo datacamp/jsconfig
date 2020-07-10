@@ -9,6 +9,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier',
     'prettier/react',
+    'plugin:sonarjs/recommended',
   ],
   overrides: [
     {
@@ -16,6 +17,9 @@ module.exports = {
         jest: true,
       },
       files: testFilesGlobPatterns,
+      rules: {
+        'sonarjs/no-identical-functions': 'off',
+      },
     },
     {
       files: ['prettier.config.js'],
@@ -35,6 +39,7 @@ module.exports = {
     'react',
     'react-hooks',
     'simple-import-sort',
+    'sonarjs',
     'sort-keys-fix',
     'eslint-comments',
   ],
@@ -84,6 +89,10 @@ module.exports = {
         ],
       },
     ],
+    'sonarjs/cognitive-complexity': 'warn',
+    'sonarjs/max-switch-cases': 'off',
+    'sonarjs/no-duplicate-string': 'warn',
+    'sonarjs/no-small-switch': 'off',
     'sort-keys-fix/sort-keys-fix': [
       'error',
       'asc',
