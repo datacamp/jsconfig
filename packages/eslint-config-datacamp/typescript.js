@@ -18,6 +18,7 @@ module.exports = {
       files: testFilesGlobPatterns,
       rules: {
         '@typescript-eslint/ban-ts-ignore': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/ts-expect-error': 'off',
       },
     },
