@@ -2,10 +2,7 @@
   "name": "@datacamp/eslint-config",
   "version": "1.2.0",
   "main": "index.js",
-  "files": [
-    "*.js",
-    "CHANGELOG.md"
-  ],
+  "files": ["*.js", "CHANGELOG.md"],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.9.0",
     "@typescript-eslint/parser": "^2.9.0",
@@ -25,5 +22,10 @@
   "peerDependencies": {
     "eslint": "^6.0.1"
   },
-  "homepage": "https://github.com/datacamp-engineering/jsconfig"
+  "homepage": "https://github.com/datacamp-engineering/jsconfig",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datacamp-engineering/jsconfig.git",
+    "directory": "packages/eslint-config-datacamp"
+  }
 }
