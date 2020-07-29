@@ -2,9 +2,12 @@
   "name": "@datacamp/prettier-config",
   "version": "1.0.0",
   "main": "index.js",
-  "files": ["*.js", "CHANGELOG.md"],
+  "files": [
+    "*.js",
+    "CHANGELOG.md"
+  ],
   "peerDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^2.0.0"
   },
   "homepage": "https://github.com/datacamp-engineering/jsconfig"
 }
