@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/prettier-config@0.1.0...@datacamp/prettier-config@2.0.0) (2020-07-29)
+
+
+### Bug Fixes
+
+* **prettier:** bump version number ([db263fc](https://github.com/datacamp-engineering/jsconfig/commit/db263fc))
+* **prettier:** remove default settings ([e532898](https://github.com/datacamp-engineering/jsconfig/commit/e532898))
+
+
+### Features
+
+* bump prettier version to v2 ([b4586c8](https://github.com/datacamp-engineering/jsconfig/commit/b4586c8))
+
+
+### BREAKING CHANGES
+
+* **prettier:** If you already upgraded to prettier 2.x, some settings will have a new value
+e.g. `arrowParens` will now have the value `always` instead of `avoid`
+
+
+
+
+
 # 0.1.0 (2020-02-13)
 
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@1.1.0...@datacamp/eslint-config@1.2.0) (2020-07-29)
+
+
+### Bug Fixes
+
+* set no-explicit-any to off for test files ([9278582](https://github.com/datacamp-engineering/jsconfig/commit/9278582))
+
+
+### Features
+
+* **eslintrc:** allow ts-ignore in tests ([da5a15a](https://github.com/datacamp-engineering/jsconfig/commit/da5a15a))
+
+
+
+
+
 # [1.1.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@1.0.1...@datacamp/eslint-config@1.1.0) (2020-04-01)
 
 
