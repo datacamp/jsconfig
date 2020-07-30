@@ -2,7 +2,7 @@
   "private": true,
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
-    "commitlint": "^8.3.5",
+    "commitlint": "^9.1.0",
     "eslint": "^6.3.0",
     "husky": "^4.0.10",
     "lerna": "^3.16.4",
