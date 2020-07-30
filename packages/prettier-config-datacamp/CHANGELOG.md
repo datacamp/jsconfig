@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/prettier-config@2.0.0...@datacamp/prettier-config@2.1.0) (2020-07-30)
+
+
+### Features
+
+* adds repository info to package.json files ([5a28357](https://github.com/datacamp-engineering/jsconfig/commit/5a28357))
+
+
+
+
+
 # [2.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/prettier-config@0.1.0...@datacamp/prettier-config@2.0.0) (2020-07-29)
 
 

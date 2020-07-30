@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@1.2.0...@datacamp/eslint-config@1.3.0) (2020-07-30)
+
+
+### Features
+
+* adds repository info to package.json files ([5a28357](https://github.com/datacamp-engineering/jsconfig/commit/5a28357))
+
+
+
+
+
 # [1.2.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@1.1.0...@datacamp/eslint-config@1.2.0) (2020-07-29)
 
 
