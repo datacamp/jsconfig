@@ -36,9 +36,12 @@ module.exports = {
     'react-hooks',
     'simple-import-sort',
     'sort-keys-fix',
+    'eslint-comments',
   ],
   rules: {
     'comma-dangle': 'off', // Defined by prettier
+    'eslint-comments/no-unused-disable': 'error',
+    'eslint-comments/no-unused-enable': 'error',
     'import/no-extraneous-dependencies': [
       'error',
       {
