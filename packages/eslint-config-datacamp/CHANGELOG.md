@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@1.3.0...@datacamp/eslint-config@2.0.0) (2020-08-03)
+
+
+### Features
+
+* add eslint-plugin-comments ([704bd0d](https://github.com/datacamp-engineering/jsconfig/commit/704bd0d))
+
+
+### BREAKING CHANGES
+
+* there is no autofix for this rule, so it requires manual intervention
+
+
+
+
+
 # [1.3.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@1.2.0...@datacamp/eslint-config@1.3.0) (2020-07-30)
 
 
