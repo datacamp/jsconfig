@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@2.0.0...@datacamp/eslint-config@3.0.0) (2020-08-06)
+
+
+### Features
+
+* add sonar-lint ([23b18ec](https://github.com/datacamp-engineering/jsconfig/commit/23b18ec))
+
+
+### BREAKING CHANGES
+
+* Add sonar-lint rules and not all of them are autofixable
+
+
+
+
+
 # [2.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@1.3.0...@datacamp/eslint-config@2.0.0) (2020-08-03)
 
 
