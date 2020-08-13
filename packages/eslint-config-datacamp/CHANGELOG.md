@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@3.0.0...@datacamp/eslint-config@3.1.0) (2020-08-13)
+
+
+### Features
+
+* **eslint:** add array-type rule ([4bdac88](https://github.com/datacamp-engineering/jsconfig/commit/4bdac88))
+
+
+
+
+
 # [3.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@2.0.0...@datacamp/eslint-config@3.0.0) (2020-08-06)
 
 
