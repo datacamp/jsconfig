@@ -25,7 +25,7 @@ module.exports = {
   ],
   plugins: ['json', 'typescript-sort-keys'],
   rules: {
-    '@typescript-eslint/array-type': 'array-simple',
+    '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
