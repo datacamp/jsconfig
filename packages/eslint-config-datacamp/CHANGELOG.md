@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@3.1.0...@datacamp/eslint-config@3.1.1) (2020-08-18)
+
+
+### Bug Fixes
+
+* **eslint:** fix array-type config ([e14c376](https://github.com/datacamp-engineering/jsconfig/commit/e14c376))
+
+
+
+
+
 # [3.1.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@3.0.0...@datacamp/eslint-config@3.1.0) (2020-08-13)
 
 
