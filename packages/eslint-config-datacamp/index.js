@@ -42,11 +42,18 @@ module.exports = {
     'sonarjs',
     'sort-keys-fix',
     'eslint-comments',
+    'filenames',
   ],
   rules: {
     'comma-dangle': 'off', // Defined by prettier
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/no-unused-enable': 'error',
+    'filenames/match-exported': [
+      'error',
+      [null, 'kebab', 'snake', 'camel', 'pascal'],
+      null,
+      true,
+    ],
     'import/no-extraneous-dependencies': [
       'error',
       {
