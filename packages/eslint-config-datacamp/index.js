@@ -54,6 +54,7 @@ module.exports = {
       null,
       true,
     ],
+    'import/no-anonymous-default-export': 'error',
     'import/no-extraneous-dependencies': [
       'error',
       {
