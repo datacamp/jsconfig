@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@3.1.1...@datacamp/eslint-config@4.0.0) (2020-08-27)
+
+
+### Features
+
+* **eslint:** no anonymous default Export ([66fb4ae](https://github.com/datacamp-engineering/jsconfig/commit/66fb4ae))
+
+
+### BREAKING CHANGES
+
+* **eslint:** no anonymous default export
+
+
+
+
+
 ## [3.1.1](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@3.1.0...@datacamp/eslint-config@3.1.1) (2020-08-18)
 
 
