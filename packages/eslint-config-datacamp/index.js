@@ -40,6 +40,7 @@ module.exports = {
     'react-hooks',
     'simple-import-sort',
     'sonarjs',
+    'sort-destructure-keys',
     'sort-keys-fix',
     'eslint-comments',
     'filenames',
@@ -96,6 +97,7 @@ module.exports = {
     'sonarjs/max-switch-cases': 'off',
     'sonarjs/no-duplicate-string': 'warn',
     'sonarjs/no-small-switch': 'off',
+    'sort-destructure-keys/sort-destructure-keys': 'error',
     'sort-keys-fix/sort-keys-fix': [
       'error',
       'asc',
