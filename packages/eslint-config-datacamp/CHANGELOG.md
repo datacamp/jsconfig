@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@4.0.0...@datacamp/eslint-config@4.1.0) (2020-09-18)
+
+
+### Features
+
+* **eslint:** sort destructuring keys ([861a5b4](https://github.com/datacamp-engineering/jsconfig/commit/861a5b4))
+
+
+
+
+
 # [4.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@3.1.1...@datacamp/eslint-config@4.0.0) (2020-08-27)
 
 
