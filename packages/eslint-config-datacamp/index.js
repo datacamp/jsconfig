@@ -35,6 +35,8 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
+    'eslint-comments',
+    'filenames',
     'json',
     'react',
     'react-hooks',
@@ -42,8 +44,6 @@ module.exports = {
     'sonarjs',
     'sort-destructure-keys',
     'sort-keys-fix',
-    'eslint-comments',
-    'filenames',
   ],
   rules: {
     'comma-dangle': 'off', // Defined by prettier
