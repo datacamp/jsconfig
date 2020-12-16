@@ -127,5 +127,4 @@ _Please only run this from master and make sure to pull the latest master before
 
 ## Example Projects using JSConfig
 
-- [teach-data-api](https://github.com/datacamp-engineering/teach-data-api)
-- [kubernetes-multiplexer](https://github.com/datacamp-engineering/kubernetes-multiplexer)
+- [DataCamp's Design System](https://github.com/datacamp/design-system)
