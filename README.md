@@ -123,7 +123,7 @@ yarn release
 
 This will propose version numbers for you and push a commit with a changelog to all the individual packages.
 
-_Please only run this from master and make sure to pull the latest master before you run it._ Running it will push a commit to master which the updated changelog etc.
+_Please only run this from main and make sure to pull the latest main before you run it._ Running it will push a commit to main which the updated changelog etc.
 
 ## Example Projects using JSConfig
 
