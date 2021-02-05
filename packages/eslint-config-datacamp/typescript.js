@@ -55,6 +55,7 @@ module.exports = {
         varsIgnorePattern: '^_',
       },
     ],
+    '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/prefer-ts-expect-error': 'error',
     'import/extensions': [
       'error',
@@ -67,6 +68,7 @@ module.exports = {
       },
     ],
     'no-underscore-dangle': 'off',
+    'no-use-before-define': 'off',
     'prefer-type-alias/prefer-type-alias': 'error',
     'react/prop-types': 'off',
     'typescript-sort-keys/interface': [
