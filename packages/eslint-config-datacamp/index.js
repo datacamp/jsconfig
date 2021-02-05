@@ -46,6 +46,7 @@ module.exports = {
     'sort-keys-fix',
   ],
   rules: {
+    'class-methods-use-this': 'off',
     'comma-dangle': 'off', // Defined by prettier
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/no-unused-enable': 'error',
