@@ -105,7 +105,7 @@ module.exports = {
     ],
     'sonarjs/cognitive-complexity': 'warn',
     'sonarjs/max-switch-cases': 'off',
-    'sonarjs/no-duplicate-string': 'warn',
+    'sonarjs/no-duplicate-string': 'off',
     'sonarjs/no-small-switch': 'off',
     'sort-destructure-keys/sort-destructure-keys': 'error',
     'sort-keys-fix/sort-keys-fix': [
