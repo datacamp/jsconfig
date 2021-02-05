@@ -107,6 +107,7 @@ module.exports = {
     'sonarjs/max-switch-cases': 'off',
     'sonarjs/no-duplicate-string': 'off',
     'sonarjs/no-small-switch': 'off',
+    'sonarjs/prefer-immediate-return': 'off',
     'sort-destructure-keys/sort-destructure-keys': 'error',
     'sort-keys-fix/sort-keys-fix': [
       'error',
