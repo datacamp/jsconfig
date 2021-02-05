@@ -17,6 +17,7 @@ module.exports = {
     {
       files: testFilesGlobPatterns,
       rules: {
+        '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/ts-expect-error': 'off',
@@ -26,6 +27,7 @@ module.exports = {
   plugins: ['json', 'typescript-sort-keys'],
   rules: {
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
+    '@typescript-eslint/ban-ts-comment': 'error',
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
@@ -41,6 +43,7 @@ module.exports = {
         varsIgnorePattern: '^_',
       },
     ],
+    '@typescript-eslint/prefer-ts-expect-error': 'error',
     'import/extensions': [
       'error',
       'ignorePackages',
