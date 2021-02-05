@@ -11,7 +11,7 @@
   "scripts": {
     "lint": "eslint .",
     "release": "lerna publish --conventional-commits",
-    "commitlint:ci": "commitlint --config commitlint.config.js --from \"origin/master\""
+    "commitlint:ci": "commitlint --config commitlint.config.js --from \"origin/main\""
   },
   "husky": {
     "hooks": {
