@@ -24,7 +24,7 @@ module.exports = {
       },
     },
   ],
-  plugins: ['json', 'typescript-sort-keys'],
+  plugins: ['json', 'typescript-sort-keys', 'prefer-type-alias'],
   rules: {
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
     '@typescript-eslint/ban-ts-comment': 'error',
@@ -66,6 +66,7 @@ module.exports = {
       },
     ],
     'no-underscore-dangle': 'off',
+    'prefer-type-alias/prefer-type-alias': 'error',
     'react/prop-types': 'off',
     'typescript-sort-keys/interface': [
       'error',
