@@ -34,6 +34,13 @@ module.exports = {
         allowTypedFunctionExpressions: true,
       },
     ],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+      },
+    ],
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -44,6 +51,7 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'no-underscore-dangle': 'off',
     'react/prop-types': 'off',
     'typescript-sort-keys/interface': [
       'error',
