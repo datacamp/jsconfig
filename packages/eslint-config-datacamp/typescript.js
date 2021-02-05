@@ -36,6 +36,17 @@ module.exports = {
         allowTypedFunctionExpressions: true,
       },
     ],
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        custom: {
+          match: false,
+          regex: '^I[A-Z]',
+        },
+        format: ['PascalCase'],
+        selector: 'interface',
+      },
+    ],
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
