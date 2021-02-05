@@ -73,6 +73,7 @@ module.exports = {
     'jest/no-deprecated-functions': 'off', // Needs to know the jest version, not possible from a shared config
     'no-console': 'error',
     'no-useless-catch': 'error',
+    'no-useless-constructor': 'off',
     'object-shorthand': ['error', 'always'],
     'prefer-const': 'error',
     'prefer-template': 'error',
