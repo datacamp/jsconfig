@@ -11,11 +11,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * use @typrscript-eslint/no-use-before-define instead of default ([8adf7a4](https://github.com/datacamp-engineering/jsconfig/commit/8adf7a4f66fe3c854d261ea7371033ebacecf9a3))
 
 
-### chore
-
-* autoformat package.json ([8cb0f1c](https://github.com/datacamp-engineering/jsconfig/commit/8cb0f1cf0faac14cc42ee441019fd6aa3e2569bb))
-
-
 ### Features
 
 * allow config files to contain dev dependencies ([d3adbe2](https://github.com/datacamp-engineering/jsconfig/commit/d3adbe24ff33fd22325c42a6ff558ad03269f575))
@@ -29,14 +24,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * turn off sonarjs/prefer-immediate-return ([dba6036](https://github.com/datacamp-engineering/jsconfig/commit/dba6036ffd81dfccef482dcf387774739136e3e2))
 
 
-### Reverts
-
-* Revert "chore: publish packages" ([537a929](https://github.com/datacamp-engineering/jsconfig/commit/537a929197e5f29b4b10c0b515a84852aa65f96c))
-
-
 ### BREAKING CHANGES
 
-* It didn't accept the `!` convention so this is a work around
+* add @typescript-eslint/no-unused-vars except if start with _ ([68c3dee](https://github.com/datacamp-engineering/jsconfig/commit/68c3dee5db4585cde9689706515377d897977562))
+* forbid naming interfaces starting with a capital I ([5fd6349](https://github.com/datacamp-engineering/jsconfig/commit/5fd6349f3e2afbc7f600f8a07fc4c5dde70d01c7))
+* add prefer-type-alias/prefer-type-alias ([fd2bff1](https://github.com/datacamp-engineering/jsconfig/commit/fd2bff196c836807e7ffd3179e2ce96c834e1a17))
 
 
 
