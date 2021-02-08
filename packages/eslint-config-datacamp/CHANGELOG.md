@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@4.1.0...@datacamp/eslint-config@4.2.0) (2021-02-08)
+
+
+### Bug Fixes
+
+* use @typrscript-eslint/no-use-before-define instead of default ([8adf7a4](https://github.com/datacamp-engineering/jsconfig/commit/8adf7a4f66fe3c854d261ea7371033ebacecf9a3))
+
+
+### Features
+
+* allow config files to contain dev dependencies ([d3adbe2](https://github.com/datacamp-engineering/jsconfig/commit/d3adbe24ff33fd22325c42a6ff558ad03269f575))
+* only allow //ts-expect-error and require a description why added ([f8bc416](https://github.com/datacamp-engineering/jsconfig/commit/f8bc416e0dad7b45f4a27cf3d59457203715daf9))
+* turn off @typescript-eslint/no-empty-function in tests ([98464f0](https://github.com/datacamp-engineering/jsconfig/commit/98464f020fd1a2fd2e81e8a3c4651f9264285102))
+* turn off class-methods-use-this ([3d7fb98](https://github.com/datacamp-engineering/jsconfig/commit/3d7fb98832e9a8e81ea805f778f29cbf9e64edd4))
+* turn off import/prefer-default-export ([42ba9f7](https://github.com/datacamp-engineering/jsconfig/commit/42ba9f7ef22a1f37f0f879ebd44ade3fa6c5cd0d))
+* turn off max-classes-per-file ([a8fe9c6](https://github.com/datacamp-engineering/jsconfig/commit/a8fe9c69a148ce862eb27c935a73df2bb8b7cc98))
+* turn off no-useless-constructor ([e76c53b](https://github.com/datacamp-engineering/jsconfig/commit/e76c53b225bc91fd7a4bec57c65c1d006fc401a5))
+* turn off sonarjs/no-duplicate-string ([a9b4e73](https://github.com/datacamp-engineering/jsconfig/commit/a9b4e7333fd6a6cdd7e7f908312a98b7eee59fc9))
+* turn off sonarjs/prefer-immediate-return ([dba6036](https://github.com/datacamp-engineering/jsconfig/commit/dba6036ffd81dfccef482dcf387774739136e3e2))
+
+
+
+
+
 # [4.1.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@4.0.0...@datacamp/eslint-config@4.1.0) (2020-09-18)
 
 
