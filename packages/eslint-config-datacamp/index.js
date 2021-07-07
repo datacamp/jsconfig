@@ -1,5 +1,10 @@
 const { testFilesGlobPatterns } = require('./helpers');
 
+// Ignored rules deprecated in v7.0.0 of ESLint but present in eslint-node-plugin
+// https://eslint.org/blog/2020/02/whats-coming-in-eslint-7.0.0#deprecating-nodejscommonjs-specific-rules
+// 'callback-return', 'global-require', 'handle-callback-err', 'no-mixed-requires', 'no-new-require', 'no-path-concat', 'no-process-env', 'no-process-exit'
+// Possible errors have been set to 'error' and Stylistic issues have been set to 'off'
+
 module.exports = {
   extends: [
     'eslint:recommended',
@@ -10,6 +15,7 @@ module.exports = {
     'prettier',
     'prettier/react',
     'plugin:sonarjs/recommended',
+    'plugin:node/recommended',
   ],
   overrides: [
     {
@@ -24,8 +30,8 @@ module.exports = {
     {
       files: ['prettier.config.js'],
       rules: {
-        'global-require': 'off',
         'import/no-extraneous-dependencies': 'off',
+        'node/global-require': 'off',
       },
     },
   ],
@@ -50,7 +56,9 @@ module.exports = {
     'comma-dangle': 'off', // Defined by prettier
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/no-unused-enable': 'error',
-    'filenames/match-exported': ['error', [null, 'camel', 'kebab'], null, true],
+    'filenames/match-exported': ['error', [null, 'camel'], null, true],
+    'global-require': 'off', // Deprecated in ESLint 7.0.0, uses node/global-require instead
+    'handle-callback-err': 'off', // Deprecated in ESLint 7.0.0, uses node/handle-callback-err instead
     'import/no-anonymous-default-export': ['error', { allowObject: true }],
     'import/no-deprecated': 'warn',
     'import/no-extraneous-dependencies': [
@@ -74,9 +82,28 @@ module.exports = {
     'jest/no-deprecated-functions': 'off', // Needs to know the jest version, not possible from a shared config
     'max-classes-per-file': 'off',
     'no-console': 'error',
+    'no-mixed-requires': 'off', // Deprecated in ESLint 7.0.0, uses node/no-mixed-requires instead
+    'no-new-require': 'off', // Deprecated in ESLint 7.0.0, uses node/no-new-require instead
+    'no-path-concat': 'off', // Deprecated in ESLint 7.0.0, uses node/no-path-concat instead
     'no-plusplus': 'off',
+    'no-process-env': 'off', // Deprecated in ESLint 7.0.0, uses node/no-process-env instead
+    'no-process-exit': 'off', // Deprecated in ESLint 7.0.0, uses node/no-process-exit instead
     'no-useless-catch': 'error',
     'no-useless-constructor': 'off',
+    'node/callback-return': 'off',
+    'node/global-require': 'off',
+    'node/handle-callback-err': 'error',
+    'node/no-missing-import': 'off',
+    'node/no-mixed-requires': 'off',
+    'node/no-new-require': 'error',
+    'node/no-path-concat': 'error',
+    'node/no-process-env': 'off',
+    'node/no-process-exit': 'error',
+    'node/no-unpublished-import': 'off',
+    'node/no-unpublished-require': 'off',
+    'node/no-unsupported-features/es-builtins': 'off',
+    'node/no-unsupported-features/es-syntax': 'off',
+    'node/no-unsupported-features/node-builtins': 'off',
     'object-shorthand': ['error', 'always'],
     'prefer-const': 'error',
     'prefer-template': 'error',
@@ -93,7 +120,7 @@ module.exports = {
           // Side effect imports.
           ['^\\u0000'],
           // NodeJS modules
-          [`^(${require('module').builtinModules.join('|')})(/|$)`], // eslint-disable-line global-require
+          [`^(${require('module').builtinModules.join('|')})(/|$)`],
           // Packages
           ['^@?\\w'],
           // Absolute imports
