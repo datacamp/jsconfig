@@ -52,6 +52,7 @@ module.exports = {
     'eslint-comments/no-unused-enable': 'error',
     'filenames/match-exported': ['error', [null, 'camel', 'kebab'], null, true],
     'import/no-anonymous-default-export': ['error', { allowObject: true }],
+    'import/no-deprecated': 'warn',
     'import/no-extraneous-dependencies': [
       'error',
       {
