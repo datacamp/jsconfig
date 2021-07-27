@@ -50,7 +50,7 @@ module.exports = {
     'comma-dangle': 'off', // Defined by prettier
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/no-unused-enable': 'error',
-    'filenames/match-exported': ['error', [null, 'camel'], null, true],
+    'filenames/match-exported': ['error', [null, 'camel', 'kebab'], null, true],
     'import/no-anonymous-default-export': ['error', { allowObject: true }],
     'import/no-extraneous-dependencies': [
       'error',
