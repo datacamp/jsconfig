@@ -56,7 +56,7 @@ module.exports = {
     'comma-dangle': 'off', // Defined by prettier
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/no-unused-enable': 'error',
-    'filenames/match-exported': ['error', [null, 'camel'], null, true],
+    'filenames/match-exported': ['error', [null, 'camel', 'kebab'], null, true],
     'global-require': 'off', // Deprecated in ESLint 7.0.0, uses node/global-require instead
     'handle-callback-err': 'off', // Deprecated in ESLint 7.0.0, uses node/handle-callback-err instead
     'import/no-anonymous-default-export': ['error', { allowObject: true }],
