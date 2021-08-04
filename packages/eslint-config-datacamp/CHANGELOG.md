@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@5.0.0...@datacamp/eslint-config@6.0.0) (2021-08-04)
+
+
+### chore
+
+* bump ESLint to v7.0.0 ([18fee7f](https://github.com/datacamp-engineering/jsconfig/commit/18fee7feb4db9f62aea32eb642aa392925b6f6ea))
+
+
+### BREAKING CHANGES
+
+* new rules will require manual changes to fix
+
+
+
+
+
 # [5.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@4.1.0...@datacamp/eslint-config@5.0.0) (2021-02-08)
 
 

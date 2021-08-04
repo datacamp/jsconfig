@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/prettier-config@2.1.0...@datacamp/prettier-config@3.0.0) (2021-08-04)
+
+
+### chore
+
+* bump prettier to v2.3.2 ([b124c6b](https://github.com/datacamp-engineering/jsconfig/commit/b124c6b91ebf4d1935a77ea5ecfbd338587df4fc))
+
+
+### BREAKING CHANGES
+
+* compatability concerns with eslint
+
+
+
+
+
 # [2.1.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/prettier-config@2.0.0...@datacamp/prettier-config@2.1.0) (2020-07-30)
 
 
