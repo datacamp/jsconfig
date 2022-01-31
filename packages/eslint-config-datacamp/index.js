@@ -13,7 +13,7 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:prettier/recommended',
     'prettier',
-    'prettier/react',
+    'prettier/prettier',
     'plugin:sonarjs/recommended',
     'plugin:node/recommended',
   ],
@@ -35,9 +35,10 @@ module.exports = {
       },
     },
   ],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2019,
+    requireConfigFile: false,
     sourceType: 'module',
   },
   plugins: [
