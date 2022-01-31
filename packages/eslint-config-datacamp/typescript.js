@@ -5,7 +5,6 @@ module.exports = {
     './index',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
   ],
   overrides: [
     {
