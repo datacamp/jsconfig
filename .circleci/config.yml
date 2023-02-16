@@ -9,9 +9,9 @@ jobs:
     executor: node
     steps:
       - checkout
-      # - run:
-      #     name: Add .npmrc
-      #     command: printf "@datacamp:registry=https://registry.npmjs.org/\n//registry.npmjs.org/:_authToken=$NPM_TOKEN\n" > .npmrc
+      - run:
+          name: Add .npmrc
+          command: printf "@datacamp:registry=https://registry.npmjs.org/\n//registry.npmjs.org/:_authToken=$NPM_TOKEN\n" > .npmrc
       - run:
           name: Install dependencies
           command: yarn install
@@ -25,7 +25,7 @@ workflows:
   pr_flow:
     jobs:
       - checks:
-          # context: org-global
+          context: org-global
           filters:
             branches:
               ignore:
