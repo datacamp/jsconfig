@@ -50,8 +50,10 @@ module.exports = {
     'sonarjs',
     'sort-destructure-keys',
     'sort-keys-fix',
+    '@datacamp/waffles',
   ],
   rules: {
+    '@datacamp/waffles/tokens': 'error',
     'class-methods-use-this': 'off',
     'comma-dangle': 'off', // Defined by prettier
     curly: ['error', 'all'],
