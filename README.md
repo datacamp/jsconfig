@@ -43,6 +43,28 @@ module.exports = {
 };
 ```
 
+Or even better if you also want to enable a bunch of rules for which type-information is needed
+
+```js
+// .eslintrc.js
+module.exports = {
+  extends: ['@datacamp/eslint-config/typescript-with-type-information'],
+  parserOptions: {
+    project: path.join(__dirname, './tsconfig.eslint.json'),
+    tsconfigRootDir: __dirname,
+  }
+};
+
+// tsconfig.eslint.json
+{
+  "exclude": ["node_modules", "**/node_modules", "**/dist"],
+  "extends": "./tsconfig.json", // Make sure to let this point to your local tsconfig.json
+  "include": ["**/*", ".eslintrc.js"]
+}
+```
+
+Feel free to configure the `parserOptions` differently. But this setup should hopefully work for most repositories. There is more documentation available ([[1](https://typescript-eslint.io/linting/typed-linting/)], [[2](https://typescript-eslint.io/linting/typed-linting/monorepos)] & [[3](https://typescript-eslint.io/architecture/parser/#project)])
+
 For front-end projects, you might want to adjust the environment:
 
 ```js
