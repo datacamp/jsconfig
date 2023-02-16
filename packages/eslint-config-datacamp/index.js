@@ -54,6 +54,8 @@ module.exports = {
   rules: {
     'class-methods-use-this': 'off',
     'comma-dangle': 'off', // Defined by prettier
+    curly: ['error', 'all'],
+    eqeqeq: ['error', 'always', { null: 'never' }],
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/no-unused-enable': 'error',
     'filenames/match-exported': ['error', [null, 'camel', 'kebab'], null, true],
@@ -80,6 +82,7 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'jest/no-deprecated-functions': 'off', // Needs to know the jest version, not possible from a shared config
+    'jest/no-disabled-tests': 'error',
     'max-classes-per-file': 'off',
     'no-console': 'error',
     'no-mixed-requires': 'off', // Deprecated in ESLint 7.0.0, uses node/no-mixed-requires instead
@@ -90,6 +93,7 @@ module.exports = {
     'no-process-exit': 'off', // Deprecated in ESLint 7.0.0, uses node/no-process-exit instead
     'no-useless-catch': 'error',
     'no-useless-constructor': 'off',
+    'no-void': ['error', { allowAsStatement: true }],
     'node/callback-return': 'off',
     'node/global-require': 'off',
     'node/handle-callback-err': 'error',
@@ -108,9 +112,11 @@ module.exports = {
     'prefer-const': 'error',
     'prefer-template': 'error',
     'prettier/prettier': 'error',
+    'react/jsx-boolean-value': 'error',
     'react/jsx-sort-props': 'error',
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
+    'react/self-closing-comp': 'error',
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'simple-import-sort/imports': [
