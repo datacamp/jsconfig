@@ -9,18 +9,13 @@ module.exports = {
   ],
   overrides: [
     {
-      files: [...testFilesGlobPatterns, '*.js', '*.jsx'],
-      rules: {
-        '@typescript-eslint/explicit-function-return-type': 'off',
-      },
-    },
-    {
       files: testFilesGlobPatterns,
       rules: {
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/no-empty-function': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/ts-expect-error': 'off',
       },
     },
@@ -29,14 +24,14 @@ module.exports = {
   rules: {
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
     '@typescript-eslint/ban-ts-comment': 'error',
-    '@typescript-eslint/explicit-function-return-type': [
+    '@typescript-eslint/consistent-type-imports': [
       'error',
       {
-        allowExpressions: true,
-        allowHigherOrderFunctions: true,
-        allowTypedFunctionExpressions: true,
+        prefer: 'type-imports',
       },
     ],
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/naming-convention': [
       'error',
       {
@@ -48,6 +43,8 @@ module.exports = {
         selector: 'interface',
       },
     ],
+    '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/no-non-null-assertion': 'error',
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
@@ -57,6 +54,7 @@ module.exports = {
     ],
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/prefer-ts-expect-error': 'error',
+    '@typescript-eslint/sort-type-union-intersection-members': 'error',
     'import/extensions': [
       'error',
       'ignorePackages',

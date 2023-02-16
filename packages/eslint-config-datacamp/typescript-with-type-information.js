@@ -31,6 +31,17 @@ module.exports = {
   ],
   rules: {
     ...typescriptTypeInformationChecksDisabled,
+    '@typescript-eslint/no-unnecessary-condition': 'error',
+    '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/prefer-regexp-exec': 'off',
+    '@typescript-eslint/strict-boolean-expressions': [
+      'error',
+      {
+        allowNullableBoolean: true, // Allowed because otherwise there are quite some false positives
+        allowNullableObject: false,
+        allowNumber: false,
+        allowString: false,
+      },
+    ],
   },
 };
