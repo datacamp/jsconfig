@@ -51,9 +51,11 @@ module.exports = {
     'sort-destructure-keys',
     'sort-keys-fix',
     '@datacamp/waffles',
+    '@datacamp/workspace',
   ],
   rules: {
     '@datacamp/waffles/tokens': 'error',
+    '@datacamp/workspace/track-clicks': 'error',
     'class-methods-use-this': 'off',
     'comma-dangle': 'off', // Defined by prettier
     curly: ['error', 'all'],
