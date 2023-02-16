@@ -9,8 +9,28 @@
  * More specifically, it's required to set `project` and recommended to set `tsconfigRootDir`. See the README.md for more information on how it could be setup
  */
 
+/**
+ * These are very useful but also very strict eslint rules requiring everything
+ * to be typed without `any` etc. We should strive to enable them down the line
+ */
+const typescriptTypeInformationChecksDisabled = {
+  '@typescript-eslint/no-unsafe-assignment': 'off',
+  '@typescript-eslint/no-unsafe-call': 'off',
+  '@typescript-eslint/no-unsafe-member-access': 'off',
+  '@typescript-eslint/no-unsafe-return': 'off',
+  '@typescript-eslint/restrict-template-expressions': 'off',
+  '@typescript-eslint/unbound-method': 'off',
+};
+exports.typescriptTypeInformationChecksDisabled =
+  typescriptTypeInformationChecksDisabled;
+
 module.exports = {
   extends: [
-    './typescript'
-  ]
-}
+    './typescript',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+  ],
+  rules: {
+    ...typescriptTypeInformationChecksDisabled,
+    '@typescript-eslint/prefer-regexp-exec': 'off',
+  },
+};
