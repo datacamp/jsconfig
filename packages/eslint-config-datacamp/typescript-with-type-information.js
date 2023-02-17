@@ -14,6 +14,7 @@
  * to be typed without `any` etc. We should strive to enable them down the line
  */
 const typescriptTypeInformationChecksDisabled = {
+  '@typescript-eslint/no-unsafe-argument': 'off',
   '@typescript-eslint/no-unsafe-assignment': 'off',
   '@typescript-eslint/no-unsafe-call': 'off',
   '@typescript-eslint/no-unsafe-member-access': 'off',
@@ -31,6 +32,10 @@ module.exports = {
   ],
   rules: {
     ...typescriptTypeInformationChecksDisabled,
+    '@typescript-eslint/no-misused-promises': [
+      'error',
+      { checksVoidReturn: false },
+    ],
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/prefer-regexp-exec': 'off',

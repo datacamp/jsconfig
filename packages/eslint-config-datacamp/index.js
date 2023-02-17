@@ -60,6 +60,7 @@ module.exports = {
     'class-methods-use-this': 'off',
     'comma-dangle': 'off', // Defined by prettier
     curly: ['error', 'all'],
+    'default-param-last': 'off', // doesn't work well with reducers
     eqeqeq: ['error', 'always', { null: 'never' }],
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/no-unused-enable': 'error',
@@ -146,8 +147,11 @@ module.exports = {
     'sonarjs/cognitive-complexity': 'warn',
     'sonarjs/max-switch-cases': 'off',
     'sonarjs/no-duplicate-string': 'off',
+    'sonarjs/no-nested-switch': 'off',
+    'sonarjs/no-nested-template-literals': 'off',
     'sonarjs/no-small-switch': 'off',
     'sonarjs/prefer-immediate-return': 'off',
+    'sonarjs/prefer-single-boolean-return': 'off',
     'sort-destructure-keys/sort-destructure-keys': 'error',
     'sort-keys-fix/sort-keys-fix': [
       'error',
