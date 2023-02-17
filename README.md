@@ -126,11 +126,13 @@ If you need help, ping the #javascript channel on Slack.
 1. On the next javascript guild meeting, we go over all open PRs and quickly discuss as a group on whether we think it's a good idea. For this, we base ourselves on the vision. A change that fits the vision well has a higher chance of getting merged.
 
 ### Commit messages
+
 We use [commitlint]() to lint our commit messages and follow [config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum). The version of the packages will be bumped based on the commit messages as well, see [the conventional commits website](https://www.conventionalcommits.org/en/v1.0.0/) for more information (short version: fix=patch, feat=minor, BREAKING CHANGE footer=major)
 
 It's hard to know what is a breaking change so these our the guidelines:
-* It's a breaking change if it adds new errors that are not auto-fixable. So after running eslint --fix you should be good again and you just need to review the things it fixed
-* It's a breaking change if it expects to change a lot of code on --fix E.g. object literal properties should be ordered (it's auto fixable but it's gonna mess up a lot of code). Most prettier changes will also fall under this
+
+- It's a breaking change if it adds new errors that are not auto-fixable. So after running eslint --fix you should be good again and you just need to review the things it fixed
+- It's a breaking change if it expects to change a lot of code on --fix E.g. object literal properties should be ordered (it's auto fixable but it's gonna mess up a lot of code). Most prettier changes will also fall under this
 
 So in short, users should be able to run `eslint --fix` (or equivalent) and review a few things but it should be doable to review in <10 minutes, even for large projects.
 Other changes could qualify as well but then we basically always have major changes and almost never minor so that's why we choose these guidelines (for now). We're open to change them if they don't work for us.
