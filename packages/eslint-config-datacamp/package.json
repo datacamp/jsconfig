@@ -1,8 +1,11 @@
 {
   "name": "@datacamp/eslint-config",
-  "version": "6.1.0",
+  "version": "7.0.0",
   "main": "index.js",
-  "files": ["*.js", "CHANGELOG.md"],
+  "files": [
+    "*.js",
+    "CHANGELOG.md"
+  ],
   "dependencies": {
     "@babel/core": "^7.20.12",
     "@babel/eslint-parser": "^7.19.1",
