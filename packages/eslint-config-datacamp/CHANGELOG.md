@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@7.0.0...@datacamp/eslint-config@7.1.0) (2023-03-16)
+
+
+### Features
+
+* e2e-spec files as test files ([c8e1023](https://github.com/datacamp-engineering/jsconfig/commit/c8e10232af2409109ee8804b130c268e8da203c2))
+
+
+
+
+
 # [6.1.0](https://github.com/datacamp-engineering/jsconfig/compare/@datacamp/eslint-config@6.0.0...@datacamp/eslint-config@6.1.0) (2023-02-27)
 
 ### Features
