@@ -108,6 +108,19 @@ It's recommended to:
 - also install eslint to check whether your files are following your prettier config.
 - install prettier plugin for your editor of choice
 
+### NestJS :lion:
+
+For DI to properly consume Reflect metadata add to your `.eslintrc.js` file:
+```
+parserOptions: {
+  emitDecoratorMetadata: true,
+}
+```
+
+It causes TypeScript to create references to value imports when they are used in a type-only location.
+
+More context [here](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-type-imports.md#usage-with-emitdecoratormetadata)
+
 ## Contribute :family:
 
 ### Developer guide
