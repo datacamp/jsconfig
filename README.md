@@ -47,6 +47,8 @@ Or even better if you also want to enable a bunch of rules for which type-inform
 
 ```js
 // .eslintrc.js
+const path = require('path');
+
 module.exports = {
   extends: ['@datacamp/eslint-config/typescript-with-type-information'],
   parserOptions: {
