@@ -22,7 +22,7 @@ The goal of JS Config is to improve the productivity of our developers (in the l
 ### ESlint :wrench:
 
 ```bash
-yarn add -D eslint @datacamp/eslint-config
+yarn add -D eslint@^7.0.0 @datacamp/eslint-config
 ```
 
 Create a file `.eslintrc.js` with the following contents
