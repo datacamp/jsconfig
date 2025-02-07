@@ -5,7 +5,7 @@
     "commitlint": "^17.4.3",
     "eslint": "^8.0.0",
     "husky": "^4.3.8",
-    "lerna": "^6.5.1",
+    "lerna": "^8.1.9",
     "prettier": "2.8.4"
   },
   "scripts": {
